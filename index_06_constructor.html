@@ -1,0 +1,35 @@
+<div></div>
+
+<script>
+
+// 상속
+// constructor = object 생성 기계
+// this : constuctor에서 새로 생성되는 object (instance)
+
+function Student(name) {
+    this.name = name;
+    this.age = 15;
+    this.sayHi = function() {
+        console.log('안녕하세요'+ this.name + '입니다' )
+    }
+}
+
+var stu1 = new Student('Park');
+
+
+
+// 연습문제
+
+
+function Product(name, price) {
+    this.name = name;
+    this.price = price;
+    this.부가세 = function(){
+        console.log(this.price*0.1);
+    }
+}
+
+
+</script>
+
+
